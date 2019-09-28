@@ -50,7 +50,8 @@ public class NetworkManagerScript : MonoBehaviourPunCallbacks
             PhotonNetwork.LocalPlayer.NickName = "White";
             StartCoroutine(SpawnMyPlayer2());
         }
-        TextInfos.text = PhotonNetwork.LocalPlayer.NickName + " Joined Room " + PhotonNetwork.CurrentRoom.Name + " now containing " + PhotonNetwork.CountOfPlayers.ToString();
+        TextInfos.text = PhotonNetwork.LocalPlayer.NickName + " Joined Room " + PhotonNetwork.CurrentRoom.Name + 
+                " now containing " + PhotonNetwork.CountOfPlayers.ToString();
 
         //PhotonNetwork.LoadLevel(1);  //Index of scene in building list
     }
