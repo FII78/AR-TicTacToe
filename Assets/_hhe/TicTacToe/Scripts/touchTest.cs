@@ -29,24 +29,24 @@ public class touchTest : MonoBehaviour
     {
         view = GetComponent<PhotonView>();
 
-        TextInfos.text = "Start";
+        //TextInfos.text = "Start";
     }
 
     void Update()
     {
-        TextInfos.text = "LocalPlayer ActorNumber: " + 
-            PhotonNetwork.LocalPlayer.ActorNumber.ToString() +
-            " PlayersTurnNr.: " + PlayersTurnNr;
+        //TextInfos.text = "LocalPlayer ActorNumber: " + 
+        //    PhotonNetwork.LocalPlayer.ActorNumber.ToString() +
+        //    " PlayersTurnNr.: " + PlayersTurnNr;
 
         #region PlayersTurnNr Logick
 
-        if (PhotonNetwork.LocalPlayer.ActorNumber != PlayersTurnNr)  //Error OwnerAnchor always = 0
-        {
-            TextInfos.text = "Not your turn: " +
-                    PhotonNetwork.LocalPlayer.ActorNumber.ToString() +
-                    " This players turn: " + PlayersTurnNr;
-            return;
-        }
+        //if (PhotonNetwork.LocalPlayer.ActorNumber != PlayersTurnNr)  //Error OwnerAnchor always = 0
+        //{
+        //    TextInfos.text = "Not your turn: " +
+        //            PhotonNetwork.LocalPlayer.ActorNumber.ToString() +
+        //            " This players turn: " + PlayersTurnNr;
+        //    return;
+        //}
         #endregion
 
 
